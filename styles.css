@@ -248,6 +248,7 @@ div .buttons .sign-in:hover {
     /* gap: 10px; */
     padding: 0.5rem 1.375rem;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 .row-section ul li img{
@@ -283,7 +284,6 @@ div .buttons .sign-in:hover {
 }
 
 .row-section .column-section .scroll-arrow .scroll{
-    position: absolute;
     z-index: 3;
     display: flex;
     align-items: center;    
@@ -294,8 +294,6 @@ div .buttons .sign-in:hover {
     padding-right: 0.75rem;
 }
 
-.scroll-arrow .scroll-left-arrow::scroll-marker
-
 
 .row-section .column-section .scroll-arrow .scroll-right-arrow{
     right: 0;
@@ -305,13 +303,23 @@ div .buttons .sign-in:hover {
     height: 7.5rem;
     width: 1.5rem;
     border-radius: 0.5rem;
+    background: #1a1a1a;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.row-section .column-section .scroll-arrow .scroll .scroll-button img {
+    width: 20px;
+    height: 40px;
+    filter: invert(1);
+}
 
-
+.row-section .column-section .scroll-arrow .scroll .scroll-button:hover {
+    background: #3a3a3a;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
